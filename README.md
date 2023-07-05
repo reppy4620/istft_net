@@ -27,4 +27,16 @@ pip install torch torchaudio lightning pandas
 
 # Result
 
-WIP
+Trained 1000 epochs(612000 steps) with batch_size = 16.
+
+Pretrained model ckpt is here.
+[https://huggingface.co/reppy4620/istft_net_jsut/blob/main/jsut_1000.ckpt](https://huggingface.co/reppy4620/istft_net_jsut/blob/main/jsut_1000.ckpt)
+
+Some audio samples are in `asset/sample/`
+
+| loss | plot |
+| --- | --- |
+| Discriminator | ![mel](./asset/loss/disc.png) |
+| Generator | ![mel](./asset/loss/gen.png) |
+| Feature Matching | ![mel](./asset/loss/fm.png) |
+| Mel | ![mel](./asset/loss/mel.png) |
